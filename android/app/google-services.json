@@ -1,43 +1,26 @@
 {
   "project_info": {
-    "project_number": "76471554747",
-    "project_id": "drivevalley-fdb7f",
-    "storage_bucket": "drivevalley-fdb7f.firebasestorage.app"
+    "project_number": "786488962854",
+    "project_id": "elnisr-7dfb0",
+    "storage_bucket": "elnisr-7dfb0.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:76471554747:android:f434fcbf8a18817b6d0f9e",
+        "mobilesdk_app_id": "1:786488962854:android:30c6a418f6b61290b91be7",
         "android_client_info": {
-          "package_name": "com.sixamtech.delivery"
+          "package_name": "com.elnisr.cutomer.app"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "76471554747-k8l4iefl236bq751f8lacsh28ron2leu.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCFGqSEiWMItei_AFIUgdM53PWrvyGmjFY"
+          "current_key": "AIzaSyDu_s-bXtNT3aiHwc2DrfJVBo-PeClsNrw"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "76471554747-k8l4iefl236bq751f8lacsh28ron2leu.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "76471554747-3nh7ctih8ihgbam4kva02gsv1gdq8ehq.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.sixamtech.hexaride"
-              }
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     },
