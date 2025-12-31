@@ -1,41 +1,48 @@
 import 'package:flutter/material.dart';
 
-Color _primaryColor = const Color(0xFF1455AC);
-Color _secondaryColor = const Color(0xFFF58300);
+// ✅ Green Palette for Dark Theme
+Color _primaryColor = const Color(0xFF04BB7B); // Main Green
+Color _secondaryColor = const Color(0xFF2ECC71); // Light Green
 
 ThemeData dark = ThemeData(
   fontFamily: 'TitilliumWeb',
   primaryColor: _primaryColor,
   brightness: Brightness.dark,
-  highlightColor: const Color(0xFF252525),
-  hintColor: const Color(0xFFc7c7c7),
-  cardColor: const Color(0xFF242424),
+
+  highlightColor: const Color(0xFF1E1E1E),
+  hintColor: const Color(0xFFB0B0B0),
+  cardColor: const Color(0xFF1F1F1F),
   scaffoldBackgroundColor: const Color(0xFF000000),
   splashColor: Colors.transparent,
 
-
   textTheme: const TextTheme(
-    bodyLarge: TextStyle(color: Color(0xFFE9EEF4)),  // Text color primary
-    bodyMedium: TextStyle(color: Color(0xFFE9EEF4)), // Text color Secondary
-    bodySmall: TextStyle(color: Color(0xFFE9EEF4)),  // Text color Light grey
+    bodyLarge: TextStyle(color: Color(0xFFE9EEF4)),
+    bodyMedium: TextStyle(color: Color(0xFFE9EEF4)),
+    bodySmall: TextStyle(color: Color(0xFFBDBDBD)),
   ),
 
-  colorScheme : ColorScheme.dark(
-    primary: _primaryColor,  // Primary Color
-    secondary: _secondaryColor,  // Secondary Color
-    tertiary: const Color(0xFFFFBB38), // Warning Color
-    tertiaryContainer: const Color(0xFF6C7A8E),
-    surface: const Color(0xFF2D2D2D),
-    onPrimary: const Color(0xFFB7D7FE),
-    onTertiaryContainer: const Color(0xFF04BB7B), // Success Color
+  colorScheme: ColorScheme.dark(
+    primary: _primaryColor,          // ✅ GREEN
+    secondary: _secondaryColor,      // ✅ Light Green
+
+    tertiary: const Color(0xFFFFBB38), // Warning
+    tertiaryContainer: const Color(0xFF1E3A32), // Dark green container
+
+    surface: const Color(0xFF1A1A1A),
+    onPrimary: Colors.white,
+
+    onTertiaryContainer: const Color(0xFF04BB7B), // Success GREEN
     primaryContainer: const Color(0xFF208458),
-    onSecondaryContainer: const Color(0x912A2A2A),
-    outline: const Color(0xff5C8FFC), // Info Color
-    onTertiary: const Color(0xFF545252),
-    secondaryContainer: const Color(0xFFE9EEF4),
-    surfaceContainer: const Color(0xFFFB6C4C),
-    error: const Color(0xFFFF4040), // Danger Color
-    shadow: const Color(0xFFF4F7FC),
+
+    onSecondaryContainer: const Color(0xFF1E1E1E),
+    outline: const Color(0xFF04BB7B), // ✅ Green borders
+
+    onTertiary: const Color(0xFF8A8A8A),
+    secondaryContainer: const Color(0xFF133F33),
+
+    surfaceContainer: const Color(0xFF122B23),
+    error: const Color(0xFFFF4040),
+    shadow: const Color(0xFF0E0E0E),
   ),
 
   pageTransitionsTheme: const PageTransitionsTheme(builders: {
