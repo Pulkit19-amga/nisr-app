@@ -123,12 +123,13 @@ class SearchProductController with ChangeNotifier {
   bool get isClear => _isClear;
 
   void cleanSearchProduct({bool notify = false}) {
-    // searchedProduct = ProductModel(products: []);
     searchedProduct = null;
     minFilterValue = 0;
     maxFilterValue = 0;
+    _productTypeIndex = 1; // reset to physical
     _isClear = true;
-    if(notify){
+ 
+    if (notify) {
       notifyListeners();
     }
   }
@@ -150,7 +151,7 @@ class SearchProductController with ChangeNotifier {
     }
 
 
-    ApiResponseModel apiResponse = await searchProductServiceInterface!.getSearchProductList(query, categoryIds, brandIds, authorIds, publishingIds, sort, priceMin, priceMax, offset, _productTypeIndex == 0 ? 'all' : _productTypeIndex == 1 ? 'physical' : 'digital');
+    ApiResponseModel apiResponse = await searchProductServiceInterface!.getSearchProductList(query, categoryIds, brandIds, authorIds, publishingIds, sort, priceMin, priceMax, offset, _productTypeIndex == 0 ? 'all' : _productTypeIndex == 2 ? 'digital' : 'physical');
     if (apiResponse.response != null && apiResponse.response!.statusCode == 200) {
       if(offset == 1) {
         searchedProduct = null;
